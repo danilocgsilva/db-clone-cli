@@ -1,0 +1,6 @@
+{
+    "name": "DB Clone CLI",
+    "dockerComposeFile": "../docker-compose-dev.yml",
+    "service": "db-clone-cli",
+    "workspaceFolder": "/app"
+}

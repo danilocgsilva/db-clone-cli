@@ -22,4 +22,6 @@ RUN apt install php8.5 php8.5-fpm -y
 RUN apt install curl -y
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin/ --filename=composer
 
+RUN apt install git -y
+
 CMD while : ; do sleep 1000; done
