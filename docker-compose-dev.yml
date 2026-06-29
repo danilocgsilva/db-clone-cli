@@ -1,0 +1,8 @@
+services:
+  db-clone-cli:
+    container_name: db_clone_cli
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes:
+      - "./app:/app"
