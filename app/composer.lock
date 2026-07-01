@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a613fd8c8f779d4c07bdb4acde9db81c",
+    "content-hash": "7472a63b7eb23803b7e2a66bbec580a1",
     "packages": [
         {
             "name": "danilocgsilva/db-clone-core",
-            "version": "0.1.0",
+            "version": "0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/danilocgsilva/db-clone-core.git",
-                "reference": "b80983c7d72d022c35f0cbdc76b94cbd1d3f6580"
+                "reference": "557d13e5ec2acaf687e9a3f80b1b946a1ef46b2e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/danilocgsilva/db-clone-core/zipball/b80983c7d72d022c35f0cbdc76b94cbd1d3f6580",
-                "reference": "b80983c7d72d022c35f0cbdc76b94cbd1d3f6580",
+                "url": "https://api.github.com/repos/danilocgsilva/db-clone-core/zipball/557d13e5ec2acaf687e9a3f80b1b946a1ef46b2e",
+                "reference": "557d13e5ec2acaf687e9a3f80b1b946a1ef46b2e",
                 "shasum": ""
             },
             "require": {
@@ -39,10 +39,10 @@
                 }
             ],
             "support": {
-                "source": "https://github.com/danilocgsilva/db-clone-core/tree/0.1.0",
+                "source": "https://github.com/danilocgsilva/db-clone-core/tree/0.2.0",
                 "issues": "https://github.com/danilocgsilva/db-clone-core/issues"
             },
-            "time": "2026-06-30T21:08:12+00:00"
+            "time": "2026-07-01T08:47:57+00:00"
         },
         {
             "name": "doctrine/collections",

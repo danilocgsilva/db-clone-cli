@@ -1,7 +1,7 @@
 {
     "name": "danilocgsilva/db-clone-cli",
     "type": "project",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "repositories": [
         {
             "type": "vcs",
@@ -10,7 +10,7 @@
     ],
     "require": {
         "symfony/console": "^8.1",
-        "danilocgsilva/db-clone-core": "^0.1.0"
+        "danilocgsilva/db-clone-core": "^0.2.0"
     },
     "autoload": {
         "psr-4": {

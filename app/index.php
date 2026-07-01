@@ -10,12 +10,12 @@ use Doctrine\Migrations\Tools\Console\Command as MigrationsCommand;
 use Doctrine\Migrations\DependencyFactory;
 use Doctrine\Migrations\Configuration\Migration\PhpFile;
 use Doctrine\Migrations\Configuration\EntityManager\ExistingEntityManager;
+use Danilocgsilva\DbCloneCore\BootstrapFactory;
 
 require __DIR__ . '/vendor/autoload.php';
-require __DIR__ . '/src/bootstrap.php';
 
 $application = new Application();
-
+$entityManager = BootstrapFactory::getEntityManager();
 ConsoleRunner::addCommands($application, new SingleManagerProvider($entityManager));
 
 $dependencyFactory = DependencyFactory::fromEntityManager(

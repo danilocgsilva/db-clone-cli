@@ -17,7 +17,6 @@ services:
   db-clone-cli-db:
     container_name: db_clone_cli_db
     image: mysql:9.7.1
-    user: "1000:1000"
     volumes:
       - "./data:/var/lib/mysql"
     environment:
