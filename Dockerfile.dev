@@ -17,13 +17,11 @@ EXPOSE 22
 
 RUN add-apt-repository -y ppa:ondrej/php
 RUN apt update
-RUN apt install php8.5 php8.5-fpm -y
+RUN apt install php8.5 php8.5-fpm php8.5-curl -y
 
 RUN apt install curl -y
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin/ --filename=composer
 
-RUN apt install git -y
-
-RUN apt install zip -y
+RUN apt install git zip -y
 
 CMD while : ; do sleep 1000; done
