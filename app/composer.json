@@ -10,7 +10,7 @@
     ],
     "require": {
         "symfony/console": "^8.1",
-        "danilocgsilva/db-clone-core": "^0.1.0"
+        "danilocgsilva/db-clone-core": "^0.2.0"
     },
     "autoload": {
         "psr-4": {
