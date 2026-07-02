@@ -24,31 +24,22 @@ class RegisterDatabase extends Command
         $io = new SymfonyStyle($input, $output);
         $io->title("Database Registration");
 
-        BootstrapFactory::getEntityManager()
-            ->persist(
-                new Database()
-                    ->setHost(
-                        $io->ask("Database host")
-                    )
-                    ->setPassword(
-                        $io->ask("Database password")
-                    )
-                    ->setName(
-                        $io->askHidden("Database name")
-                    )
-            )
-            ->flush();
+        $entityManager = BootstrapFactory::getEntityManager();
 
+        $entityManager->persist(
+            new Database()
+                ->setHost(
+                    $io->ask("Database host")
+                )
+                ->setName(
+                    $io->ask("Database name")
+                )
+                ->setPassword(
+                    $io->askHidden("Database password")
+                )
+        );
 
-        // $databaseHost = $io->ask("Database host");
-        // $databaseUser = $io->ask("Database user");
-        // $databasePassword = $io->askHidden("Database user");
-
-
-
-        // $io->text("The database host is {$databaseHost}");
-        // $io->text("The database user is {$databaseUser}");
-        // $io->text("The database password is {$databasePassword}");
+        $entityManager->flush();
 
         $io->success("Database registered successfully!");
         
